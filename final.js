@@ -31,11 +31,11 @@ for (var serial = 1; serial <= lastDay; serial++){
 var fileName = "data.docx";
 //write your code here
 
-if(fileName.startsWith("#")){
+if(fileName.slice(0, 1) === "#"){
     console.log("Store");
-}else if(fileName.endsWith(".pdf")){
+}else if(fileName.slice(-4) === ".pdf"){
     console.log("Store");
-}else if(fileName.endsWith(".docx")){
+}else if(fileName.slice(-5) === ".docx"){
     console.log("Store");
 }else{
     console.log("Delete");
