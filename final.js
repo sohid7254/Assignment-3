@@ -16,13 +16,42 @@ if(money >= 25000){
 }
 
 /** Problem -03 ( Medicine Planner ) */
-var lastDay = 15;
+var lastDay = 11;
 //write your code here
-console.log("Output-(string)");
+
 for (var serial = 1; serial <= lastDay; serial++){
     if (serial % 3 === 0){
-        console.log("-medicine",serial );
+        console.log(serial,"-medicine" );
     }else{
-        console.log("-rest", serial);
+        console.log(serial,"-rest" );
     }
 }
+
+/** Problem 04 - (Delete / Store) */
+var fileName = "data.docx";
+//write your code here
+
+if(fileName.startsWith("#")){
+    console.log("Store");
+}else if(fileName.endsWith(".pdf")){
+    console.log("Store");
+}else if(fileName.endsWith(".docx")){
+    console.log("Store");
+}else{
+    console.log("Delete");
+}
+
+
+/** Problem 05 - ( PH Email Generator )  */
+var student = { 
+    name: "jhanker", 
+    roll: 1014, 
+    department: "cse" 
+};
+//write your code here
+var first = student.name;
+var second = student.roll;
+var third = student.department;
+
+var result = first+second+('.')+third+('@ph.ac.bd');
+console.log(result);
